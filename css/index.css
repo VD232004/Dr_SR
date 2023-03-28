@@ -780,7 +780,7 @@ table{
 }
 
 @media (max-width: 770px) {
-    .main {
+    .about-main {
         display: flex;
         /* flex-direction: column; */
     }
@@ -802,7 +802,7 @@ table{
 }
 
 @media (max-width: 550px) {
-    .main {
+    .about-main {
         display: flex;
         flex-direction: column;
     }
@@ -823,7 +823,7 @@ table{
 }
 
 @media (max-width: 350px) {
-    .main {
+    .about-main {
         display: flex;
         flex-direction: column;
     }
