@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/caa13318f3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/images/logo/Dr-SR-logo.jpg">
+    <title>Home | Homeopathic Treatment</title>
+</head>
+
+<body>
+    <header class="nav-links">
+        <nav>
+            <a href="index.html" class="logo"><img src="/images/logo/DSR-logo.png" alt="logo"></a>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+                <li><a href="index.html#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                <li><a href="index.html#store"><i class="fa-solid fa-store"></i> Store</a></li>
+            </ul>
+            <a href="cart.html" class="cart"><img src="./images/cart.png" alt="store"><span>Cart</span></a>
+        </nav>
+    </header>
+    <main class="main-page">
+        <button onclick="topFunction()" id="go-to-top-btn" class="go-to-top"><i
+                class="fa-solid fa-arrow-up"></i></button>
+            
+        <div class="small-conatiner cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Product Name</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$200.00</td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+    <footer id="contact">
+        <div class="footer">
+            <div class="titles">
+                <h2>Contact</h2>
+                <!-- <hr> -->
+            </div>
+            <div class="footer-cards">
+                <div class="footer-card1">
+                    <span><i class="fa-solid fa-user-doctor"></i> Dr. Sheetal Rani</span>
+                    <span class="address1"><i class="fa-solid fa-location-dot"></i> ABC</span>
+                    <span class="address2">123 xyz</span>
+                    <div class="social">
+                        <a class="mobile" href="tel:123-456-7890"><i class="fa-solid fa-phone"></i> Mobile Number</a>
+                        <span><a class="email" href="mailto:rudradalal0082004@gmail.com"><i
+                                    class="fa-solid fa-envelope"></i> Email</a></span>
+                        <a class="bookconsulation" href="form.html#book-now">Book a Consulation</a>
+                    </div>
+                </div>
+                <div class="footer-cards">
+                    <div class="footer-card1">
+                        <span class="stay"><i class="fa-solid fa-users"></i> Stay Connected</span>
+                        <a href="#" id="links1"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                        <a href="#" id="links2"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                        <a href="#" id="links3"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-cards1">
+                    <div class="footer-card2">
+                        <!-- <img src="./images/logo/[Original size] Dr-SR-logo.gif" alt="Logo"> -->
+                        <span>Subscribe to my Newsletter</span>
+                        <input type="email" placeholder="Enter your email here*">
+                        <input type="button" value="Join" onclick="alert('Sorry, We are under development....')">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="copyright-hr">
+        <div class="copyright">
+            <p>&copy; All rights are reserved by Dr. Sheetal Rani</p>
+        </div>
+    </footer>
+    <script>
+        window.onbeforeunload = () => {
+            for (const form of document.getElementsByTagName('form')) {
+                form.reset();
+            }
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
