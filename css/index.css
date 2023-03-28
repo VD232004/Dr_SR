@@ -713,6 +713,10 @@ table{
         margin-bottom: 30px;
     }
 
+    .contact-form h1 {
+        font-size: 40px;
+    }
+
       /* Media Query for header */
     
       .nav-links nav{
@@ -774,6 +778,11 @@ table{
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+
+    /* Contact page */
+    .contact-form h1 {
+        font-size: 40px;
     }
     
     /* Media Query  for About us*/
