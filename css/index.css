@@ -19,7 +19,7 @@
 .nav-links nav .cart img{
     width: 40px;
     height: auto;
-    margin: 15px 25px;
+    margin: 0 25px;
 }
 
 .nav-links nav .logo img{
@@ -597,17 +597,26 @@ table{
 
 @media (min-width:1570px) {
     /* Media Query of contact form*/
-    section {
+    .contact {
         padding: 80px 3%;
+        margin-right: 5%;
         transition: .2s;
+        text-align: center;
     }
-
+    
     .contact-form h1 {
         font-size: 50px;
     }
-
-    .contact-form p {
+    
+    /* .contact-form p {
         margin-bottom: 3rem;
+    } */
+
+    /* Media Query for header */
+    
+    .nav-links nav{
+        display: flex;
+        width: auto;
     }
 }
 
@@ -619,7 +628,63 @@ table{
     
     /* Media Query for header */
     
+    .nav-links nav{
+        display: flex;
+        width: auto;
+    }
+    
+    /* Media Query for footer */
+    
+    .footer{
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: auto auto;
+        padding: auto auto;
+    }
+    
+    .footer-cards, .footer-cards .footer-cards1, .footer-cards .footer-card2, .footer-cards .footer-card1, .footer-card1 {
+        display: inline-flex;
+        flex-direction: column;
+        margin: auto;
+        padding: auto;
+        width: 100%;
+        height: auto;
+    }
+    
+    .copyright, .copyright-hr{
+        width: 100%;
+    }
+    
+}
 
+@media (max-width: 1000px) {
+    .contact {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form{
+        order: 2;
+        margin-right: 10%;
+    }
+    
+    .contact-img img {
+        display: block;
+        max-width: 100%;
+        width: 50%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+      /* Media Query for header */
+    
+      .nav-links nav{
+        display: flex;
+    }
 
      /* Media Query for footer */
 
@@ -647,47 +712,14 @@ table{
    
 }
 
-@media (max-width: 1000px) {
-    .contact {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-form {
-        order: 2;
-    }
-
-    .contact-img img {
-        display: block;
-        max-width: 100%;
-        width: 50%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
+@media (max-width: 800px){
+     
+    /* Media Query for header */
+      .nav-links nav{
+        display: flex;
+        flex-direction: column;
         text-align: center;
-        margin-bottom: 30px;
-    }
-     /* Media Query for footer */
+    }    
 
-     .footer{
-        display: inline-flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        margin: auto auto;
-        padding: auto auto;
-    }
     
-    .footer-cards, .footer-cards .footer-cards1, .footer-cards .footer-card2, .footer-cards .footer-card1, .footer-card1 {
-        display: inline-flex;
-        flex-direction: column;
-        margin: auto;
-        padding: auto;
-        width: 100%;
-        height: auto;
-    }
-
-    .copyright, .copyright-hr{
-        width: 100%;
-    }
-   
 }
