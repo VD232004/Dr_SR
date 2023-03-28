@@ -449,7 +449,7 @@
 }
 
 .join{
-    width: max-content;
+    width: auto;
 }
 
 .copyright{
@@ -666,7 +666,7 @@ table{
     
     .contact-form{
         order: 2;
-        margin-right: 10%;
+        /* margin-right: 10%; */
     }
     
     .contact-img img {
