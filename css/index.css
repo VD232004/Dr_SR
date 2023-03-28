@@ -138,7 +138,7 @@
 .go-to-top{
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 10px;
     right: 30px;
     color: #fff;
     font-size: 18px;
@@ -363,14 +363,9 @@
     padding: 20px;
     width: 20vw;
     height: 30vh;
-    /* background-color: rgb(95, 94, 94); */
     margin: 0 40px;
     border-radius: 5px;
 }
-
-/* .footer-cards .footer-card1:hover{
-    box-shadow: 0 5px 20px grey;
-} */
 
 .footer-card1 span, .footer-card1 .social a{
     padding: 5px;
@@ -409,14 +404,6 @@
     transition: .5s linear;
     background-color: wheat;
 }
-/* 
-.footer-cards1 img{
-    margin-top: -50px;
-    margin-left: 100px;
-    width: 100%;
-    height: auto;
-    border-radius: 450px;
-} */
 
 .footer-cards1{
     display: flex;
@@ -429,33 +416,14 @@
     display: inline-flex;
     flex-direction: column;
     padding: 20px;
-    width: 20vw;
-    height: 30vh;
-    /* background-color: rgb(95, 94, 94); */
+    width: 100%;
+    height: auto;
     margin: 0 40px;
     border-radius: 5px;
 }
 
 .footer-cards1 .footer-card2 span{
     padding: 0  0 20px;
-}
-
-input[type="email"], input[type="text"], textarea{
-    border: none;
-    display: block;
-    outline: none;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-input[type="email"]:focus, input[type="text"]:focus, textarea:focus{
-    background: rgb(110, 12, 202);
-    color: #f3f3f3;
-}
-
-input[type="email"]:focus::placeholder, input[type="text"]:focus::placeholder, textarea:focus::placeholder {
-    color: #fff;
 }
 
 .footer-cards1 .footer-card2 input[type="button"]{
@@ -471,6 +439,11 @@ input[type="email"]:focus::placeholder, input[type="text"]:focus::placeholder, t
     cursor: pointer;
     transition: .5s linear;
     background-color: wheat;
+}
+
+.copyright{
+    display: inline-block;
+    width: 100%;
 }
 
 .copyright-hr{
@@ -547,6 +520,24 @@ form textarea {
     border-radius: 10px;
 }
 
+input[type="email"], input[type="text"], textarea{
+    border: none;
+    display: block;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+input[type="email"]:focus, input[type="text"]:focus, textarea:focus{
+    background: rgb(110, 12, 202);
+    color: #f3f3f3;
+}
+
+input[type="email"]:focus::placeholder, input[type="text"]:focus::placeholder, textarea:focus::placeholder {
+    color: #fff;
+}
+
 .contact-form form input:hover, form textarea:hover{
     transition: .4s all;
     border: 2px solid rgb(10, 21, 119);
@@ -592,9 +583,9 @@ table{
     border-collapse: collapse;
 }
 
-/* Media Query of Form */
 
 @media (max-width:1570px) {
+    /* Media Query of contact form*/
     section {
         padding: 80px 3%;
         transition: .2s;
@@ -607,6 +598,35 @@ table{
     .contact-form p {
         margin-bottom: 3rem;
     }
+
+    /* Media Query for header */
+    
+
+
+    /* Media Query for footer */
+
+    .footer{
+        display: inline-flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: auto auto;
+        padding: auto auto;
+    }
+    
+    .footer-cards, .footer-cards .footer-cards1, .footer-cards .footer-card2, .footer-cards .footer-card1, .footer-card1 {
+        display: inline-flex;
+        flex-direction: column;
+        margin: auto;
+        padding: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .copyright, .copyright-hr{
+        width: auto;
+    }
+    
 }
 
 @media (max-width: 1090px) {
