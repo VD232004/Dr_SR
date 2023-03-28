@@ -490,6 +490,10 @@ input[type="email"]:focus::placeholder, input[type="text"]:focus::placeholder, t
 
 
 /* form entry page */
+
+.forms input, textarea{
+    font-family: 'Courier New', Courier, monospace;
+}
 .contact {
     background: #fff;
     height: 100%;
