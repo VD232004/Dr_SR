@@ -26,6 +26,13 @@
     width: 100px;
     height: auto;
     margin: 0 25px;
+    transition: .5s ease-in-out;
+}
+
+.nav-links nav .logo img:hover{
+    transition: .5s ease-in-out;
+    background-color: rgb(216, 216, 216);
+    border-radius: 100px;
 }
 
 .nav-links nav .cart{
@@ -441,6 +448,10 @@
     background-color: wheat;
 }
 
+.join{
+    width: max-content;
+}
+
 .copyright{
     display: inline-block;
     width: 100%;
@@ -584,7 +595,7 @@ table{
 }
 
 
-@media (max-width:1570px) {
+@media (min-width:1570px) {
     /* Media Query of contact form*/
     section {
         padding: 80px 3%;
@@ -598,17 +609,24 @@ table{
     .contact-form p {
         margin-bottom: 3rem;
     }
+}
 
+@media (max-width: 1090px) {
+    .contact {
+        gap: 2rem;
+        transition: .3s;
+    }
+    
     /* Media Query for header */
     
 
 
-    /* Media Query for footer */
+     /* Media Query for footer */
 
-    .footer{
+     .footer{
         display: inline-flex;
         flex-direction: column;
-        width: auto;
+        width: 100%;
         height: auto;
         margin: auto auto;
         padding: auto auto;
@@ -619,21 +637,14 @@ table{
         flex-direction: column;
         margin: auto;
         padding: auto;
-        width: auto;
+        width: 100%;
         height: auto;
     }
 
     .copyright, .copyright-hr{
-        width: auto;
+        width: 100%;
     }
-    
-}
-
-@media (max-width: 1090px) {
-    .contact {
-        gap: 2rem;
-        transition: .3s;
-    }
+   
 }
 
 @media (max-width: 1000px) {
@@ -655,4 +666,28 @@ table{
         text-align: center;
         margin-bottom: 30px;
     }
+     /* Media Query for footer */
+
+     .footer{
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: auto auto;
+        padding: auto auto;
+    }
+    
+    .footer-cards, .footer-cards .footer-cards1, .footer-cards .footer-card2, .footer-cards .footer-card1, .footer-card1 {
+        display: inline-flex;
+        flex-direction: column;
+        margin: auto;
+        padding: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .copyright, .copyright-hr{
+        width: 100%;
+    }
+   
 }
