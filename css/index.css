@@ -754,7 +754,7 @@ table{
 
 /* Media Query */
 @media (max-width: 1024px) {
-    .main {
+    .about-main {
         display: flex;
         /* flex-direction: column; */
     }
