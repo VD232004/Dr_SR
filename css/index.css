@@ -810,6 +810,13 @@ table{
 
 /* Media Query  for About us*/
 @media (max-width: 550px) {
+    
+/* Contact page */
+
+    .contact-form h1 {
+        font-size: 40px;
+    }
+    
     .about-main {
         display: flex;
         flex-direction: column;
