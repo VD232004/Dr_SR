@@ -158,13 +158,14 @@
     text-decoration: none;
     z-index: 99;
     scroll-behavior: smooth;
+    transition: .3s ease-out;
 }
 
 .go-to-top:hover{
-    transition: .3s all;
+    transition: .3s ease-in;
     cursor: pointer;
-    color: #333;
-    background-color: #f3f3f3;
+    color: #f3f3f3;
+    background-color: rgb(110, 12, 202);
 }
 
 .header-page{
@@ -212,10 +213,11 @@
     font-family: 'Courier New', Courier, monospace;
     padding: 10px 40px;
     border-radius: 2px;
+    transition: .5s ease-out;
 }
 
 .main .btn-book:hover{
-    transition: .3s linear;
+    transition: .3s ease-in;
     background-color: rgb(110, 12, 202);
     cursor: pointer;
 }
@@ -451,11 +453,12 @@
     padding: 10px 20px;
     border-radius: 5px;
     width: fit-content;
+    transition: .5s ease-out;
 }
 
 .footer-card1 .social .bookconsulation:hover{
     cursor: pointer;
-    transition: .5s linear;
+    transition: .5s ease-in;
     background-color: wheat;
 }
 
@@ -485,11 +488,12 @@
     background-color: #f3f3f3;
     color: rgb(10, 21, 119);
     border-radius: 4px;
+    transition: .5s ease-out;
 }
 
 .footer-cards1 .footer-card2 button:hover{
     cursor: pointer;
-    transition: .5s linear;
+    transition: .5s ease-in;
     background-color: wheat;
 }
 
