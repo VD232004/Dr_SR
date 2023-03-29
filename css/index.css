@@ -634,6 +634,11 @@ input[type="email"]:focus::placeholder, input[type="text"]:focus::placeholder, t
 }
 
 
+.contact-form form .join-text1{
+    color: rgb(110, 12, 202);
+    font-size: 18px;
+}
+
 /* Shopping Cart */
 
 .cart-page{
