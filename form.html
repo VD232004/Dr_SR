@@ -29,13 +29,15 @@
     <section class="contact">
       <div class="contact-form">
         <h1>Book <span>Consulation</span></h1>
-        <form action="https://formspree.io/f/xlekwlpz" method="POST" class="forms">
+        <!-- action="https://formspree.io/f/xlekwlpz" method="POST" -->
+        <form class="forms" name="submit-to-google-sheet_1">
           <input type="text" placeholder="Your Name" name="Name" required>
           <input type="email" placeholder="E-mail" id="" name="E-mail" required>
           <input name="Subject" type="text" placeholder="Write a Subject" required>
           <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
           <br />
           <input type="submit" name="submit" id="btn-submit" value="Submit" class="btn">
+          <h3><span class="join-text" id="msg1"></span></h3>
         </form>
       </div>
       <div class="contact-img">
@@ -74,7 +76,7 @@
             <span>Subscribe to get More Updates</span>
             <input type="email" class="join" name="Email" placeholder="Enter your email here*">
             <button>Join</button>
-            <span class="join-text" id="msg"></span>
+            <h3><span class="join-text" id="msg"></span></h3>
           </div>
         </form>
       </div>

@@ -47,10 +47,28 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycby5LDUy_xNXm0uPqZvZoR
         .catch(error => console.error('Error!', error.message))
 })
 
+// Send Form Data to Google Sheets
+const scriptURL1 = 'https://script.google.com/macros/s/AKfycbxFKZS8i2pIaCDhLnOvwZgGaW5a_XTkeD4tIoojHt2okPaFKw9pxtUaczfkH208aeShLA/exec'
+    const form1 = document.forms['submit-to-google-sheet_1']
+    const msg1 = document.getElementById('msg1');
+  
+    form1.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL1, { method: 'POST', body: new FormData(form1)})
+        .then(response => {
+          msg1.innerHTML = 'Thank You for Contacting!';
+          setTimeout(() => {
+            msg1.innerHTML = ' ';
+          }, 3000);
+          form1.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+})
 
-// Form reset after submiting
-window.onbeforeunload = () => {
-  for (const form of document.getElementsByTagName('form')) {
-    form.reset();
-  }
-}
+
+// // Form reset after submiting
+// window.onbeforeunload = () => {
+//   for (const form of document.getElementsByTagName('form')) {
+//     form.reset();
+//   }
+// }
