@@ -164,6 +164,7 @@
     cursor: pointer;
 }
 #google_translate_element select:focus {
+    border: 2px solid #383ffa;
     background-color: rgb(110, 12, 202);
     color: #f3f3f3;
 }
