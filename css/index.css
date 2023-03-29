@@ -273,6 +273,7 @@
 
 .about-text span {
     color: #f9004d;
+    font-weight: 800;
 }
 
 .about-text p {
@@ -495,7 +496,8 @@
 }
 
 .join{
-    width: auto;
+    max-width: max-content;
+    width: 100%;
 }
 
 .copyright{
