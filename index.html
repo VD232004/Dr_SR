@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://kit.fontawesome.com/caa13318f3.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="./images/logo/Dr-SR-logo.jpg">
-    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Home | Homeopathic Treatment</title>
 </head>
 
@@ -22,7 +22,6 @@
                 <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
                 <li><a href="#store"><i class="fa-solid fa-store"></i> Store</a></li>
                 <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
-                <!-- <a href="cart.html" class="cart"><img src="./images/cart.png" alt="store"><span>Cart</span></a> -->
             </ul>
         </nav>
     </header>
@@ -155,8 +154,8 @@
                     <span class="address2">123 xyz</span>
                     <div class="social">
                         <a class="mobile" href="tel:123-456-7890"><i class="fa-solid fa-phone"></i> Mobile Number</a>
-                        <span><a class="email" href="#mailto:#email"><i
-                                    class="fa-solid fa-envelope"></i> Email</a></span>
+                        <span><a class="email" href="#mailto:#email"><i class="fa-solid fa-envelope"></i>
+                                Email</a></span>
                         <a class="bookconsulation" href="form.html">Book a Consulation</a>
                     </div>
                 </div>
@@ -168,13 +167,14 @@
                         <a href="#" id="links3"><i class="fa-brands fa-youtube"></i> YouTube</a>
                     </div>
                 </div>
-                <div class="footer-cards1">
+                <form class="footer-cards1" name="submit-to-google-sheet">
                     <div class="footer-card2">
-                        <span>Subscribe to More Updates</span>
-                        <input type="email" placeholder="Enter your email here*">
-                        <input type="button" onclick="alert('Sorry, we are under Development....')" value="Join">
+                        <span>Subscribe to get More Updates</span>
+                        <input type="email" class="join" name="Email" placeholder="Enter your email here*">
+                        <button>Join</button>
+                        <span class="join-text" id="msg"></span>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
         <hr class="copyright-hr">

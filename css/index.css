@@ -216,7 +216,7 @@
 
 .main .btn-book:hover{
     transition: .3s linear;
-    background-color: rgb(37, 49, 160);
+    background-color: rgb(110, 12, 202);
     cursor: pointer;
 }
 
@@ -462,14 +462,12 @@
 .footer-cards1{
     display: flex;
     padding: 0 20px;
-    /* height: auto; */
+    height: auto;
     font-weight: 600;
 }
 
 .footer-cards1 .footer-card2{
-    display: inline-flex;
-    flex-direction: column;
-    padding: 20px;
+    padding: 20px 0 0;
     width: 100%;
     height: auto;
     margin: 0 40px;
@@ -477,10 +475,10 @@
 }
 
 .footer-cards1 .footer-card2 span{
-    padding: 0  0 20px;
+    padding: 0 0 20px;
 }
 
-.footer-cards1 .footer-card2 input[type="button"]{
+.footer-cards1 .footer-card2 button{
     border: none;
     width: fit-content;
     padding: 10px 20px;
@@ -489,15 +487,20 @@
     border-radius: 4px;
 }
 
-.footer-cards1 .footer-card2 input[type="button"]:hover{
+.footer-cards1 .footer-card2 button:hover{
     cursor: pointer;
     transition: .5s linear;
     background-color: wheat;
 }
 
 .join{
-    max-width: max-content;
+    margin: 20px 0 0;
     width: 100%;
+}
+
+.join-text{
+    color: pink;
+    font-size: 14px;
 }
 
 .copyright{

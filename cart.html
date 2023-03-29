@@ -21,14 +21,12 @@
                 <li><a href="index.html#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
                 <li><a href="index.html#store"><i class="fa-solid fa-store"></i> Store</a></li>
                 <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
-                <!-- <a href="cart.html" class="cart"><img src="./images/cart.png" alt="store"><span>Cart</span></a> -->
             </ul>
         </nav>
     </header>
     <main class="main-page">
         <button onclick="topFunction()" id="go-to-top-btn" class="go-to-top"><i
                 class="fa-solid fa-arrow-up"></i></button>
-            
         <div class="small-conatiner cart-page">
             <table>
                 <tr>
@@ -58,8 +56,8 @@
                     <span class="address2">123 xyz</span>
                     <div class="social">
                         <a class="mobile" href="tel:123-456-7890"><i class="fa-solid fa-phone"></i> Mobile Number</a>
-                        <span><a class="email" href="#mailto:#email"><i
-                                    class="fa-solid fa-envelope"></i> Email</a></span>
+                        <span><a class="email" href="#mailto:#email"><i class="fa-solid fa-envelope"></i>
+                                Email</a></span>
                         <a class="bookconsulation" href="form.html#book-now">Book a Consulation</a>
                     </div>
                 </div>
@@ -71,14 +69,14 @@
                         <a href="#" id="links3"><i class="fa-brands fa-youtube"></i> YouTube</a>
                     </div>
                 </div>
-                <div class="footer-cards1">
+                <form class="footer-cards1" name="submit-to-google-sheet">
                     <div class="footer-card2">
-                        <!-- <img src="./images/logo/[Original size] Dr-SR-logo.gif" alt="Logo"> -->
-                        <span>Subscribe to More Updates</span>
-                        <input type="email" placeholder="Enter your email here*">
-                        <input type="button" value="Join" onclick="alert('Sorry, We are under development....')">
+                        <span>Subscribe to get More Updates</span>
+                        <input type="email" class="join" name="Email" placeholder="Enter your email here*">
+                        <button>Join</button>
+                        <span class="join-text" id="msg"></span>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
         <hr class="copyright-hr">
