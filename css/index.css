@@ -540,21 +540,37 @@ h4 {
     padding: 0 0 20px;
 }
 
-.footer-cards1 .footer-card2 button {
+.footer-cards1 .footer-card2 button:disabled {
     border: none;
     width: fit-content;
     padding: 10px 20px;
-    background-color: #f3f3f3;
-    color: rgb(10, 21, 119);
+    background-color: #f9004d;
+    color: #f3f3f3;
     border-radius: 4px;
     transition: .5s ease-out;
     margin-bottom: 20px;
+    cursor: not-allowed;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
 }
 
-.footer-cards1 .footer-card2 button:hover {
+.footer-cards1 .footer-card2 button:not(:disabled) {
+    background-color: #f3f3f3;
+    color: rgb(8, 28, 209);
+    border: none;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: .5s ease-out;
+    margin-bottom: 20px;
+    transition: .5s ease-out;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.footer-cards1 .footer-card2 button:not(:disabled):hover {
     cursor: pointer;
     transition: .5s ease-in;
-    background-color: wheat;
+    background-color: wheat;   
 }
 
 .join {
@@ -978,3 +994,8 @@ table {
         font-size: 40px;
     }
 }
+
+
+
+
+

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/index.css">
   <script src="https://kit.fontawesome.com/caa13318f3.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/x-icon" href="./images/logo/Dr-SR-logo.jpg">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <title>Home | Homeopathic Treatment</title>
 </head>
@@ -31,7 +32,6 @@
     <section class="contact">
       <div class="contact-form">
         <h1>Book <span>Consulation</span></h1>
-        <!-- action="https://formspree.io/f/xlekwlpz" method="POST" -->
         <form class="forms" name="submit-to-google-sheet_1">
           <input type="text" placeholder="Your Name" name="Name" required>
           <input type="email" placeholder="E-mail" id="" name="E-mail" required>
@@ -51,7 +51,7 @@
     <div class="footer">
       <div class="titles">
         <h2>Contact</h2>
-        <!-- <hr> -->
+        <hr class="contact-hr">
       </div>
       <div class="footer-cards">
         <div class="footer-card1">
@@ -76,8 +76,8 @@
         <form class="footer-cards1" name="submit-to-google-sheet">
           <div class="footer-card2">
             <span>Subscribe to get More Updates</span>
-            <input type="email" class="join" name="Email" placeholder="Enter your email here*">
-            <button>Join</button>
+            <input type="email" class="join" name="Email" id="email-input2" placeholder="Enter your email here*">
+            <button type="submit" id="join2" disabled>Join</button>
             <h3><span class="join-text" id="msg"></span></h3>
           </div>
         </form>

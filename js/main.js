@@ -34,6 +34,35 @@ function linkFunc(e) {
 
 
 
+// If input is blank then the submit button will disabled else not disabled and after form submitted then the button also get disabled
+$(document).ready(function() {
+  // Loop through each form on the page
+  $('form').each(function() {
+    var inputField = $(this).find('input');
+    var submitButton = $(this).find('button[type="submit"]');
+    
+    // Disable submit button on page load
+    submitButton.attr('disabled', true);
+
+    // Listen for changes in input field
+    inputField.on('input', function() {
+      if ($(this).val().trim() === '') {
+        // If input is blank, disable submit button
+        submitButton.attr('disabled', true);
+      } else {
+        // If input is not blank, enable submit button
+        submitButton.attr('disabled', false);
+      }
+    });
+
+    // Listen for form submission
+    $(this).on('submit', function() {
+      // Disable submit button after form submission
+      submitButton.attr('disabled', true);
+    });
+  });
+});
+
 
 
 
