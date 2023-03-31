@@ -534,6 +534,17 @@ div#goog-gt- {
 }
 
 
+.customer{
+    margin-top: 2rem;
+    display: none;
+}
+
+.customer-title {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+    text-decoration: rebeccapurple overline underline;
+}
 
 /* Footer */
 
@@ -697,8 +708,9 @@ div#goog-gt- {
 /* form entry page */
 
 .forms input,
-textarea {
+textarea, label, select {
     font-family: 'Courier New', Courier, monospace;
+    margin: .7rem 0;
 }
 
 .contact {
@@ -756,7 +768,9 @@ form textarea {
 
 input[type="email"],
 input[type="text"],
-textarea {
+input[type="tel"],
+input[type="number"],
+textarea, select {
     border: none;
     display: block;
     outline: none;
@@ -767,6 +781,9 @@ textarea {
 
 input[type="email"]:focus,
 input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+select:focus,
 textarea:focus {
     background: rgb(110, 12, 202);
     color: #f3f3f3;
@@ -774,6 +791,9 @@ textarea:focus {
 
 input[type="email"]:focus::placeholder,
 input[type="text"]:focus::placeholder,
+input[type="tel"]:focus::placeholder,
+input[type="number"]:focus::placeholder,
+select:focus::placeholder,
 textarea:focus::placeholder {
     color: #fff;
 }
@@ -788,6 +808,18 @@ form textarea:hover {
 .contact-form textarea {
     resize: none;
     height: 200px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .contact-form form .btn {

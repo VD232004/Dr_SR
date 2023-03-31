@@ -61,7 +61,6 @@ function handle_addCartItem() {
   let title = product.querySelector(".product-title").innerHTML;
   let price = product.querySelector(".product-price").innerHTML;
   let imgSrc = product.querySelector(".product-img").src;
-  console.log(title, price, imgSrc);
 
   let newToAdd = {
     title,
@@ -108,8 +107,13 @@ function handle_buyOrder(){
     return;
   }
   const cartContent = cart.querySelector('.cart-content');
-  cartContent.innerHTML = ' ';
-  alert('Your Order is Placed Successfully :)');
+  const shipping_form = document.querySelector('.customer');
+  shipping_form.style.display = 'block';
+  console.log('button triggered');
+  // cartContent.innerHTML = ' ';
+  // alert('Your Order is Placed Successfully :)');
+  // location.reload();
+
   update();
 }
 
@@ -121,7 +125,7 @@ function updateTotal() {
 
   cartBoxes.forEach((cartBox) => {
     let priceElement = cartBox.querySelector(".cart-price");
-    let price = parseFloat(priceElement.innerHTML.replace("$", ""));
+    let price = parseFloat(priceElement.innerHTML.replace("₹", ""));
     let quantity = cartBox.querySelector(".cart-quantity").value;
     total += price * quantity;
   });
@@ -131,7 +135,7 @@ function updateTotal() {
   // or you can use also
   // total = Math.round(total * 100 / 100);
 
-  totalElement.innerHTML = "$" + total;
+  totalElement.innerHTML = "₹" + total;
 }
 
 // ==============HTML Components==============

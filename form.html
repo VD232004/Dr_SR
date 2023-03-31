@@ -10,7 +10,7 @@
   <link rel="icon" type="image/x-icon" href="./images/logo/Dr-SR-logo.jpg">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <title>Home | Homeopathic Treatment</title>
+  <title>Contact | Homeopathic Treatment</title>
 </head>
 
 <body>
@@ -23,29 +23,84 @@
         <li><a href="index.html#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
         <li><a href="index.html#store"><i class="fa-solid fa-store"></i> Store</a></li>
         <li id="cart-icon"><a href="#cart"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
-        <li><div id="google_translate_element"></div></li>
+        <li>
+          <div id="google_translate_element"></div>
+        </li>
       </ul>
     </nav>
     <div class="cart">
       <h2 class="cart-title">Your Cart</h2>
       <div class="cart-content">
-          <!-- <div class="cart-box">
-              <img src="./images/logo/[Original size] Dr-SR-logo.gif" alt="Product 1" class="cart-img">
-              <div class="detail-box">
-                  <div class="cart-product-title">Product 1</div>
-                  <div class="cart-price">$80.00</div>
-                  <input type="number" value="1" class="cart-quantity">
-              </div>
-              <i class="fa-solid fa-trash-can cart-remove"></i>
-          </div> -->
+
       </div>
       <div class="total">
-          <div class="total-title">Total</div>
-          <div class="total-price">$0</div>
+        <div class="total-title">Total</div>
+        <div class="total-price">₹0</div>
+      </div>
+      <div class="cutomer-details" id="show-hide">
+        <form action="#" class="forms customer">
+            <h2 class="customer-title">Shipping Details</h2>
+          <label for="Full_Name">Full Name</label>
+          <input type="text" placeholder="Your Full Name" .toUpperCase() id="Full_Name" name="Name">
+          <label for="Mobile">Mobile Number</label>
+          <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="13" placeholder="Your Mobile Number"
+            id="Mobile" name="Mobile">
+          <label for="Pincode">Pincode</label>
+          <input type="number" maxlength="6" placeholder="6 digits [0-9] PIN code" id="Pincode" name="Pincode">
+          <label for="Address_1">Flat, House No., Building, Company, Apartment</label>
+          <input type="text" placeholder="Your House No. or Other" name="House No">
+          <label for="Address_2">Area, Street, Sector, Village</label>
+          <input type="text" placeholder="Your Area or Other" name="Area">
+          <label for="landmark">Landmark</label>
+          <input type="text" placeholder="E.g. near ABC Place" name="Landmark" id="landmark">
+          <label for="town">Town/ City</label>
+          <input type="text" placeholder="Enter Town/ City" name="Town/ City" id="town">
+          <label for="state">State</label>
+          <select name="State" id="state">
+            <option value="">Select state</option>
+            <option value="AN">Andaman and Nicobar Islands</option>
+            <option value="AP">Andhra Pradesh</option>
+            <option value="AR">Arunachal Pradesh</option>
+            <option value="AS">Assam</option>
+            <option value="BR">Bihar</option>
+            <option value="CH">Chandigarh</option>
+            <option value="CT">Chhattisgarh</option>
+            <option value="DN">Dadra and Nagar Haveli</option>
+            <option value="DD">Daman and Diu</option>
+            <option value="DL">Delhi</option>
+            <option value="GA">Goa</option>
+            <option value="GJ">Gujarat</option>
+            <option value="HR">Haryana</option>
+            <option value="HP">Himachal Pradesh</option>
+            <option value="JK">Jammu and Kashmir</option>
+            <option value="JH">Jharkhand</option>
+            <option value="KA">Karnataka</option>
+            <option value="KL">Kerala</option>
+            <option value="LA">Ladakh</option>
+            <option value="LD">Lakshadweep</option>
+            <option value="MP">Madhya Pradesh</option>
+            <option value="MH">Maharashtra</option>
+            <option value="MN">Manipur</option>
+            <option value="ML">Meghalaya</option>
+            <option value="MZ">Mizoram</option>
+            <option value="NL">Nagaland</option>
+            <option value="OR">Odisha</option>
+            <option value="PY">Puducherry</option>
+            <option value="PB">Punjab</option>
+            <option value="RJ">Rajasthan</option>
+            <option value="SK">Sikkim</option>
+            <option value="TN">Tamil Nadu</option>
+            <option value="TG">Telangana</option>
+            <option value="TR">Tripura</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="UT">Uttarakhand</option>
+            <option value="WB">West Bengal</option>
+          </select>
+        </form>
       </div>
       <button type="button" class="btn-buy">Checkout</button>
       <i class="fa-solid fa-xmark" id="cart-close"></i>
-  </div>
+    </div>
   </header>
   <main class="main-page">
     <button onclick="topFunction()" id="go-to-top-btn" class="go-to-top"><i class="fa-solid fa-arrow-up"></i></button>

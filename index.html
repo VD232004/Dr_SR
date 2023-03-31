@@ -22,7 +22,7 @@
                 <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
                 <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
                 <li><a href="#store"><i class="fa-solid fa-store"></i> Store</a></li>
-                <li id="cart-icon"><a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+                <li id="cart-icon"><a href="#cart"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
                 <li>
                     <div id="google_translate_element"></div>
                 </li>
@@ -35,8 +35,69 @@
             </div>
             <div class="total">
                 <div class="total-title">Total</div>
-                <div class="total-price">$0</div>
+                <div class="total-price">₹0</div>
             </div>
+            <div class="cutomer-details" id="show-hide">
+                <form action="#" class="forms customer">
+                    <h2 class="customer-title">Shipping Details</h2>
+                  <label for="Full_Name">Full Name</label>
+                  <input type="text" placeholder="Your Full Name" .toUpperCase() id="Full_Name" name="Name">
+                  <label for="Mobile">Mobile Number</label>
+                  <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="13" placeholder="Your Mobile Number"
+                    id="Mobile" name="Mobile">
+                  <label for="Pincode">Pincode</label>
+                  <input type="number" maxlength="6" placeholder="6 digits [0-9] PIN code" id="Pincode" name="Pincode">
+                  <label for="Address_1">Flat, House No., Building, Company, Apartment</label>
+                  <input type="text" placeholder="Your House No. or Other" name="House No">
+                  <label for="Address_2">Area, Street, Sector, Village</label>
+                  <input type="text" placeholder="Your Area or Other" name="Area">
+                  <label for="landmark">Landmark</label>
+                  <input type="text" placeholder="E.g. near ABC Place" name="Landmark" id="landmark">
+                  <label for="town">Town/ City</label>
+                  <input type="text" placeholder="Enter Town/ City" name="Town/ City" id="town">
+                  <label for="state">State</label>
+                  <select name="State" id="state">
+                    <option value="">Select state</option>
+                    <option value="AN">Andaman and Nicobar Islands</option>
+                    <option value="AP">Andhra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="AS">Assam</option>
+                    <option value="BR">Bihar</option>
+                    <option value="CH">Chandigarh</option>
+                    <option value="CT">Chhattisgarh</option>
+                    <option value="DN">Dadra and Nagar Haveli</option>
+                    <option value="DD">Daman and Diu</option>
+                    <option value="DL">Delhi</option>
+                    <option value="GA">Goa</option>
+                    <option value="GJ">Gujarat</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="JK">Jammu and Kashmir</option>
+                    <option value="JH">Jharkhand</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="KL">Kerala</option>
+                    <option value="LA">Ladakh</option>
+                    <option value="LD">Lakshadweep</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="MN">Manipur</option>
+                    <option value="ML">Meghalaya</option>
+                    <option value="MZ">Mizoram</option>
+                    <option value="NL">Nagaland</option>
+                    <option value="OR">Odisha</option>
+                    <option value="PY">Puducherry</option>
+                    <option value="PB">Punjab</option>
+                    <option value="RJ">Rajasthan</option>
+                    <option value="SK">Sikkim</option>
+                    <option value="TN">Tamil Nadu</option>
+                    <option value="TG">Telangana</option>
+                    <option value="TR">Tripura</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="UT">Uttarakhand</option>
+                    <option value="WB">West Bengal</option>
+                  </select>
+                </form>
+              </div>
             <button type="button" class="btn-buy">Checkout</button>
             <i class="fa-solid fa-xmark" id="cart-close"></i>
         </div>
@@ -78,73 +139,73 @@
                 <div class="product-box">
                     <img src="./images/logo/[Original size] Dr-SR-logo.gif" alt="Product 1" class="product-img">
                     <h2 class="product-title">Product 1</h2>
-                    <span class="product-price">$80.00</span>
+                    <span class="product-price">₹80.00</span>
                     <i class="fa-solid fa-cart-plus add-cart"></i>
                 </div>
                 <!-- Box 2 -->
                 <div class="product-box">
                     <img src="./images/logo/[Original size] Dr-SR-logo.gif" alt="Product 1" class="product-img">
                     <h2 class="product-title">Product 2</h2>
-                    <span class="product-price">$64.00</span>
+                    <span class="product-price">₹64.00</span>
                     <i class="fa-solid fa-cart-plus add-cart"></i>
                 </div>
                 <!-- Box 3 -->
                 <div class="product-box">
                     <img src="./images/logo/[Original size] Dr-SR-logo.gif" alt="Product 1" class="product-img">
                     <h2 class="product-title">Product 3</h2>
-                    <span class="product-price">$76.00</span>
+                    <span class="product-price">₹76.00</span>
                     <i class="fa-solid fa-cart-plus add-cart"></i>
                 </div>
                 <!-- Box 4 -->
                 <div class="product-box">
                     <img src="./images/logo/[Original size] Dr-SR-logo.gif" alt="Product 1" class="product-img">
                     <h2 class="product-title">Product 4</h2>
-                    <span class="product-price">$50.00</span>
+                    <span class="product-price">₹50.00</span>
                     <i class="fa-solid fa-cart-plus add-cart"></i>
                 </div>
                 <!-- Box 5 -->
                 <div class="product-box">
                     <img src="./images/logo/[Original size] Dr-SR-logo.gif" alt="Product 1" class="product-img">
                     <h2 class="product-title">Product 5</h2>
-                    <span class="product-price">$90.00</span>
+                    <span class="product-price">₹90.00</span>
                     <i class="fa-solid fa-cart-plus add-cart"></i>
                 </div>
                 <!-- Box 6 -->
                 <div class="product-box">
                     <img src="./images/logo/[Original size] Dr-SR-logo.gif" alt="Product 1" class="product-img">
                     <h2 class="product-title">Product 6</h2>
-                    <span class="product-price">$78.00</span>
+                    <span class="product-price">₹78.00</span>
                     <i class="fa-solid fa-cart-plus add-cart"></i>
                 </div>
                 <!-- Box 7 -->
                 <div class="product-box">
                     <img src="./images/logo/[Original size] Dr-SR-logo.gif" alt="Product 1" class="product-img">
                     <h2 class="product-title">Product 7</h2>
-                    <span class="product-price">$87.00</span>
+                    <span class="product-price">₹87.00</span>
                     <i class="fa-solid fa-cart-plus add-cart"></i>
                 </div>
                 <!-- Box 8 -->
                 <div class="product-box">
                     <img src="./images/logo/[Original size] Dr-SR-logo.gif" alt="Product 1" class="product-img">
                     <h2 class="product-title">Product 8</h2>
-                    <span class="product-price">$88.00</span>
+                    <span class="product-price">₹88.00</span>
                     <i class="fa-solid fa-cart-plus add-cart"></i>
                 </div>
                 <!-- Box 9 -->
                 <div class="product-box">
                     <img src="./images/logo/[Original size] Dr-SR-logo.gif" alt="Product 1" class="product-img">
                     <h2 class="product-title">Product 9</h2>
-                    <span class="product-price">$89.00</span>
+                    <span class="product-price">₹89.00</span>
                     <i class="fa-solid fa-cart-plus add-cart"></i>
                 </div>
                 <!-- Box 10 -->
                 <div class="product-box">
                     <img src="./images/logo/[Original size] Dr-SR-logo.gif" alt="Product 1" class="product-img">
                     <h2 class="product-title">Product 10</h2>
-                    <span class="product-price">$30.00</span>
+                    <span class="product-price">₹30.00</span>
                     <i class="fa-solid fa-cart-plus add-cart"></i>
                 </div>
-            </div>
+            </div>      
         </section>
 
 
