@@ -107,9 +107,9 @@ function handle_buyOrder(){
     alert("There is No Order to Place Yet! \nPlease Make an Order first. ");
     return;
   }
-  // const cartContent = cart.querySelector('.cart-content');
-  // cartContent.innerHTML = ' ';
-  // alert('Your Order is Placed Successfully :)');
+  const cartContent = cart.querySelector('.cart-content');
+  cartContent.innerHTML = ' ';
+  alert('Your Order is Placed Successfully :)');
   update();
 }
 
