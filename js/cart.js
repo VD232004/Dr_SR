@@ -48,6 +48,9 @@ function addEvents() {
   addCart_btns.forEach((btn) => {
     btn.addEventListener("click", handle_addCartItem);
   });
+
+  const buy_btn = document.querySelector('.btn-buy');
+  buy_btn.addEventListener('click', handle_buyOrder);
 }
 
 //==============Handle Events Functions==============
@@ -96,6 +99,17 @@ function handle_changeItemQuantity() {
   }
   this.value = Math.floor(this.value); //to keep it integer
 
+  update();
+}
+
+function handle_buyOrder(){
+  if(itemsAdded.length <= 0){
+    alert("There is No Order to Place Yet! \nPlease Make an Order first. ");
+    return;
+  }
+  // const cartContent = cart.querySelector('.cart-content');
+  // cartContent.innerHTML = ' ';
+  // alert('Your Order is Placed Successfully :)');
   update();
 }
 
