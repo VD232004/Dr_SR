@@ -38,26 +38,26 @@
                 <div class="total-price">₹0</div>
             </div>
             <div class="cutomer-details" id="show-hide">
-                <form action="#" class="forms customer">
+                <form action="#" class="forms customer" >
                     <h2 class="customer-title">Shipping Details</h2>
                   <label for="Full_Name">Full Name</label>
-                  <input type="text" placeholder="Your Full Name" .toUpperCase() id="Full_Name" name="Name">
+                  <input type="text" placeholder="Your Full Name" .toUpperCase() id="Full_Name" name="Name" required>
                   <label for="Mobile">Mobile Number</label>
                   <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="13" placeholder="Your Mobile Number"
-                    id="Mobile" name="Mobile">
+                    id="Mobile" name="Mobile" required>
                   <label for="Pincode">Pincode</label>
-                  <input type="number" maxlength="6" placeholder="6 digits [0-9] PIN code" id="Pincode" name="Pincode">
+                  <input type="number" maxlength="6" placeholder="6 digits [0-9] PIN code" id="Pincode" name="Pincode" required>
                   <label for="Address_1">Flat, House No., Building, Company, Apartment</label>
-                  <input type="text" placeholder="Your House No. or Other" name="House No">
+                  <input type="text" placeholder="Your House No. or Other" name="House No" required>
                   <label for="Address_2">Area, Street, Sector, Village</label>
-                  <input type="text" placeholder="Your Area or Other" name="Area">
+                  <input type="text" placeholder="Your Area or Other" name="Area" required>
                   <label for="landmark">Landmark</label>
-                  <input type="text" placeholder="E.g. near ABC Place" name="Landmark" id="landmark">
+                  <input type="text" placeholder="E.g. near ABC Place" name="Landmark" id="landmark"> required
                   <label for="town">Town/ City</label>
-                  <input type="text" placeholder="Enter Town/ City" name="Town/ City" id="town">
+                  <input type="text" placeholder="Enter Town/ City" name="Town/ City" id="town" required>
                   <label for="state">State</label>
-                  <select name="State" id="state">
-                    <option value="">Select state</option>
+                  <select name="State" id="state" required>
+                    <option value="" selected>Select state</option>
                     <option value="AN">Andaman and Nicobar Islands</option>
                     <option value="AP">Andhra Pradesh</option>
                     <option value="AR">Arunachal Pradesh</option>
