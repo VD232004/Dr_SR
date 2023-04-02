@@ -52,23 +52,25 @@ function addEvents() {
   const buy_btn = document.querySelector('.btn-buy');
   buy_btn.addEventListener('click', handle_buyOrder);
 
-  // const shipping = document.querySelector('.customer');
-  // shipping.addEventListener('submit', handle_shipping_address);
+  const shipping = document.querySelector('.customer');
+  shipping.addEventListener('submit', handle_shipping_address);
 
 }
 
 //==============Handle Events Functions==============
 
-// function handle_shipping_address(){
-//   if (customer_form == ' '){
-//     alert('Please, Fill the Form.');
-//     return;
-//   }
-//   const checkout_btn = document.querySelector('.btn-buy');
-//   checkout_btn 
+function handle_shipping_address(){
+  if (customer_form == ' '){
+    alert('Please, Fill the Form.');
+    return;
+  }else if(itemsAdded == ' '){
+    shipping_form.style.display = 'none';
+  }
+  const checkout_btn = document.querySelector('.btn-buy');
+  // checkout_btn
   
-//   update();
-// };
+  update();
+};
 
 
 let itemsAdded = [ ]
@@ -136,6 +138,7 @@ function handle_buyOrder(){
 
 
 
+
 //==============Update & Renders Total Sum of cart itmes price==============
 function updateTotal() {
   let cartBoxes = document.querySelectorAll(".cart-box");
@@ -165,7 +168,7 @@ function CartBoxComponent(title, price, imgSrc) {
         <div class="detail-box">
             <div class="cart-product-title">${title}</div>
             <div class="cart-price">${price}</div>
-            <input type="number" value="1" class="cart-quantity">
+            <input type="number" value="1" class="cart-quantity" maxlength="4">
         </div>
         <i class="fa-solid fa-trash-can cart-remove"></i>
     </div>`;
