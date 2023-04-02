@@ -51,9 +51,26 @@ function addEvents() {
 
   const buy_btn = document.querySelector('.btn-buy');
   buy_btn.addEventListener('click', handle_buyOrder);
+
+  // const shipping = document.querySelector('.customer');
+  // shipping.addEventListener('submit', handle_shipping_address);
+
 }
 
 //==============Handle Events Functions==============
+
+// function handle_shipping_address(){
+//   if (customer_form == ' '){
+//     alert('Please, Fill the Form.');
+//     return;
+//   }
+//   const checkout_btn = document.querySelector('.btn-buy');
+//   checkout_btn 
+  
+//   update();
+// };
+
+
 let itemsAdded = [ ]
 
 function handle_addCartItem() {
@@ -67,6 +84,7 @@ function handle_addCartItem() {
     price,
     imgSrc,
   };
+  
 
   //   handle item if already in cart
   if (itemsAdded.find((el) => el.title == newToAdd.title)) {
@@ -74,7 +92,7 @@ function handle_addCartItem() {
     return;
   } else {
     itemsAdded.push(newToAdd);
-  }
+  };
 
   // Add product to Cart
   let cartBoxElement = CartBoxComponent(title, price, imgSrc);
@@ -88,7 +106,7 @@ function handle_addCartItem() {
 
 function handle_removeCartItem() {
   this.parentElement.remove();
-  itemsAdded = itemsAdded.filter(el => el.title != this.parentElement.querySelector('.cart-product-title'));
+  itemsAdded = itemsAdded.filter(el => el.title == this.parentElement.querySelector('.cart-product-title'));
   update();
 }
 
@@ -108,14 +126,15 @@ function handle_buyOrder(){
   }
   const cartContent = cart.querySelector('.cart-content');
   const shipping_form = document.querySelector('.customer');
+  cartContent.innerHTML = ' ';
   shipping_form.style.display = 'block';
-  console.log('button triggered');
-  // cartContent.innerHTML = ' ';
   // alert('Your Order is Placed Successfully :)');
   // location.reload();
 
   update();
 }
+
+
 
 //==============Update & Renders Total Sum of cart itmes price==============
 function updateTotal() {
