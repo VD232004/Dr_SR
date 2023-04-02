@@ -126,8 +126,8 @@ function handle_buyOrder(){
   }
   const cartContent = cart.querySelector('.cart-content');
   const shipping_form = document.querySelector('.customer');
-  cartContent.innerHTML = ' ';
   shipping_form.style.display = 'block';
+  // cartContent.innerHTML = ' ';
   // alert('Your Order is Placed Successfully :)');
   // location.reload();
 
