@@ -52,25 +52,25 @@ function addEvents() {
   const buy_btn = document.querySelector('.btn-buy');
   buy_btn.addEventListener('click', handle_buyOrder);
 
-  const shipping = document.querySelector('.customer');
-  shipping.addEventListener('submit', handle_shipping_address);
+  // const shipping = document.querySelector('.customer');
+  // shipping.addEventListener('submit', handle_shipping_address);
 
 }
 
 //==============Handle Events Functions==============
 
-function handle_shipping_address(){
-  if (customer_form == ' '){
-    alert('Please, Fill the Form.');
-    return;
-  }else if(itemsAdded == ' '){
-    shipping_form.style.display = 'none';
-  }
-  const checkout_btn = document.querySelector('.btn-buy');
-  // checkout_btn
+// function handle_shipping_address(){
+//   if (customer_form == ' '){
+//     alert('Please, Fill the Form.');
+//     return;
+//   }else if(itemsAdded == ' '){
+//     shipping_form.style.display = 'none';
+//   }
+//   const checkout_btn = document.querySelector('.btn-buy');
+//   // checkout_btn
   
-  update();
-};
+//   update();
+// };
 
 
 let itemsAdded = [ ]
@@ -125,10 +125,16 @@ function handle_buyOrder(){
   if(itemsAdded.length <= 0){
     alert("There is No Order to Place Yet! \nPlease Make an Order first. ");
     return;
+  }else{
+    const cartContent = cart.querySelector('.cart-content');
+    const shipping_form = document.querySelector('.customer');
+    if(itemsAdded.length === 0){
+      shipping_form.style.display = 'none';
+    }else{
+      shipping_form.style.display = 'block';
+      
+    }
   }
-  const cartContent = cart.querySelector('.cart-content');
-  const shipping_form = document.querySelector('.customer');
-  shipping_form.style.display = 'block';
   // cartContent.innerHTML = ' ';
   // alert('Your Order is Placed Successfully :)');
   // location.reload();
